@@ -26,6 +26,18 @@ end
 gem 'jquery-rails'
 gem 'therubyracer'
 
+group :development do
+  gem 'meta_request', '0.2.0'
+#  gem 'sqlite3'
+#  gem 'therubyracer'
+end
+
+group :production do
+#  gem 'pg'
+#  gem 'thin'
+  gem 'unicorn'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
