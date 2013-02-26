@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  term: 1
+  amount: 1
+  zip: 1
+  rate: 1
+
+two:
+  term: 1
+  amount: 1
+  zip: 1
+  rate: 1

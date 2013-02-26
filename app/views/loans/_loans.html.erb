@@ -1,0 +1,10 @@
+<% @loans.each do |loan| -%>
+    <tr>
+    <td><%= link_to number_to_currency(loan.amount), loan %></td>
+    <td><%= number_to_percentage( loan.down * 100, :precision => 2, :strip_insignificant_zeros => true ) %></td>
+    <td><%= loan.term %> Years</td>
+    <td><%= number_to_percentage( loan.rate * 100, :precision => 2, :strip_insignificant_zeros => true ) %></td>
+    <td><%= number_to_percentage( loan.appriciation * 100, :precision => 2, :strip_insignificant_zeros => true ) %></td>
+    <td><%= loan.zip %></td>
+    </tr>
+<% end -%>

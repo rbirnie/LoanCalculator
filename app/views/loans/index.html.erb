@@ -1,0 +1,18 @@
+<legend>All Loans</legend>
+
+<%= will_paginate @loans %>
+
+<table class="table table-bordered table-striped table-condensed" >
+  <tr>
+    <th class=''><%= :amount %></th>
+    <th class=''><%=  :down %></th>
+    <th class=''><%=  :term %></th>
+    <th class=''><%=  :rate %></th>
+    <th class=''><%=  :appriciation %></th>
+    <th class=''><%=  :zip %></th>
+  </tr>
+<%= render 'loans' %>
+</table>
+<%= will_paginate @loans %>
+
+<%= link_to "New Loan", new_loan_path %>

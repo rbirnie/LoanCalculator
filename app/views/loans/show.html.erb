@@ -1,0 +1,40 @@
+<legend>Total Loan Cost</legend>
+
+<table class="table table-bordered table-striped table-condensed" >
+  <tr>
+    <th>Month</th>
+    <th>Home Value</th>
+    <th>Loan Principal</th>
+    <th>Interest (<%= number_to_percentage(@loan.rate * 100, :precision => 2, :strip_insignificant_zeros => true )%>)</th>
+    <th>Total Interest
+    <th>Total Fees (<%= number_to_currency(@loan.fees) %>)</th>
+    <th>Total Expense</th>
+  </tr>
+  <% @am.each do |month| -%>
+    <%= render 'months', :month => month %>
+  <% end -%>
+</table>
+<p>
+  Amount <%= number_to_currency(@loan.amount) %>
+</p>
+<p>
+  Term <%= @loan.term %>
+</p>
+<p>
+  Down <%= @loan.down %>
+</p>
+<p>
+  Rate <%= @loan.rate %>
+</p>
+<p>
+  Appriciation <%= @loan.appriciation %>
+</p>
+<p>
+  Fees <%= @loan.fees %>
+</p>
+<p>
+  Zip <%= @loan.zip %>
+</p>
+<p>
+  Pay <%= @payment %>
+</p>
