@@ -24,10 +24,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'therubyracer'
 
 group :development do
   gem 'meta_request', '0.2.0'
+  gem 'therubyracer'
 #  gem 'sqlite3'
 #  gem 'therubyracer'
 end
