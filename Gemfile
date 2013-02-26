@@ -27,7 +27,8 @@ gem 'jquery-rails'
 
 group :development do
   gem 'meta_request', '0.2.0'
-  gem 'therubyracer'
+  gem 'therubyracer', '0.11.3'
+  gem 'libv8', '~> 3.11.8.12'
 #  gem 'sqlite3'
 #  gem 'therubyracer'
 end
