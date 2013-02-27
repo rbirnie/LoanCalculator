@@ -1,23 +1,23 @@
 <%= form_for [@loan] do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
-  <%= f.label :amount %>
-  <%= f.text_field :amount %>
+  <%= f.label :amount%>
+  <%= f.text_field :amount, :value => "650000" %>
 
   <%= f.label :rate %>
-  <%= f.text_field :rate %>
+  <%= f.text_field :rate, :value => "3.5%" %>
 
   <%= f.label :term %>
-  <%= f.text_field :term %>
+  <%= f.text_field :term, :value => "30 years" %>
 
   <%= f.label "Down Payment" %>
-  <%= f.text_field :down %>
+  <%= f.text_field :down, :value => "5%" %>
 
   <%= f.label :appriciation %>
-  <%= f.text_field :appriciation %>
+  <%= f.text_field :appriciation, :value => "1%" %>
 
   <%= f.label "Monthly Fees" %>
-  <%= f.text_field :fees %>  
+  <%= f.text_field :fees, :value => "100" %>  
 
   <%= f.label :zip %>
   <%= f.text_field :zip %>
